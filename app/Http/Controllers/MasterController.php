@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
-class HomeController extends Controller
+class MasterController extends Controller
 {
     public function home(Request $request){
         $books = DB::table('books')->select('books.id', 'books.title', 'books.author', 'books.image')->get();
