@@ -31,4 +31,12 @@ class HomeController extends Controller
         $synopsis = file_get_contents($book->synopsis);
         return view('detail')->with(compact('book', 'publisher', 'synopsis'));
     }
+
+    public function publisherlist(){
+
+    }
+
+    public function publisher(Request $request){
+
+    }
 }

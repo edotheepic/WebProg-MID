@@ -9,13 +9,13 @@
     <title>@yield('title')</title>
 </head>
 
-<header class="navbar navbar-expand-lg bg-warning d-flex justify-content-center">
-    <div class="text-light">
-        <h1>Giant Book Supplier</h1>
-    </div>
+<header class="container-fluid bg-warning text-light justify-content-center text-center">
+    {{-- <div class="text-light"> --}}
+        <h1 class="m-0  p-5">Giant Book Supplier</h1>
+    {{-- </div> --}}
 </header>
 
-<nav class="navbar navbar-expand-lg bg-light">
+<nav class="navbar navbar-expand-lg bg-light mb-3">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -47,7 +47,7 @@
 </nav>
 
 <body>
-    <div class="container w-75">
+    <div class="container w-75 mb-3">
         <div class="row bg-secondary mb-2">
             <div class="col-12 text-light">
                 <h3 class="m-2 align-items-center">@yield('subtitle')</h3>
@@ -58,5 +58,9 @@
 
     </div>
 </body>
+
+<footer class="container-fluid bg-primary text-light justify-content-center text-center">
+    <p>&#169 Happy Book Store 2022</p>
+</footer>
 
 </html>

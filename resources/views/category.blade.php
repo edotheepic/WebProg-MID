@@ -21,7 +21,7 @@
                         <h5>{{$book->title}}</h5>
                         <p>by<br>
                         {{$book->author}}</p>
-                        <a href="/detail/{{$book->id}}" class="btn btn-primary" title="Book Detail">Detail</a>
+                        <a href="/detail/{{$book->book_id}}" class="btn btn-primary" title="Book Detail">Detail</a>
                     </div>
                 </div>
             </div>

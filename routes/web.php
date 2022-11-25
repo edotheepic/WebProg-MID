@@ -21,3 +21,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'home']);
 Route::get('/detail/{id}', [HomeController::class, 'detail']);
 Route::get('/category/{id}', [HomeController::class, 'category']);
+Route::get('/publisherlist', [HomeController::class, 'publisherlist']);
+Route::get('/publisher/{id}', [HomeController::class, 'publisher']);
