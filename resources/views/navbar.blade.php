@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="/">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -31,15 +31,15 @@
                     </a>
                     <ul class="dropdown-menu">
                         @foreach($categories as $category)
-                            <li><a class="dropdown-item" href="#">{{$category->name}}</a></li>
+                            <li><a class="dropdown-item" href="/category/{{$category->id}}">{{$category->name}}</a></li>
                         @endforeach
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Publisher</a>
+                    <a class="nav-link" href="/publisher">Publisher</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link" href="/contact">Contact</a>
                 </li>
             </ul>
         </div>
@@ -47,7 +47,16 @@
 </nav>
 
 <body>
+    <div class="container w-75">
+        <div class="row bg-secondary mb-2">
+            <div class="col-12 text-light">
+                <h3 class="m-2 align-items-center">@yield('subtitle')</h3>
+            </div>
+        </div>
+
     @yield('content')
+
+    </div>
 </body>
 
 </html>

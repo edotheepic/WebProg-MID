@@ -2,7 +2,7 @@
 
 @section('title', 'Home')
 
-@section('subtitle', 'Books List')
+@section('subtitle', $category->name)
 
 @section('content')
 
@@ -29,6 +29,5 @@
         </div>
     </div>
 </div>
-
 
 @endsection

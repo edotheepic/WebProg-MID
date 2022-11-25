@@ -18,4 +18,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', [HomeController::class, 'home', 'func']);
+Route::get('/', [HomeController::class, 'home']);
+Route::get('/detail/{id}', [HomeController::class, 'detail']);
+Route::get('/category/{id}', [HomeController::class, 'category']);
