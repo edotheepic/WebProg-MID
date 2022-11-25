@@ -6,24 +6,20 @@
 
 @section('content')
 
-<div class="row">
-    @foreach($publishers as $publisher)
-    <div class="col-3 p-1">
-        <div class="border rounded bg-light">
-            {{-- image --}}
-            <div class="" style="height: 200px">
-                <img src="{{asset($publisher->image)}}" alt="" class=" h-100 w-100 rounded">
+    <div class="row">
+        @foreach($publishers as $publisher)
+            <div class="col-3 p-1">
+                <div class="card bg-light">
+                    <img src="{{asset($publisher->image)}}" class="card-img-top img-fluid" alt="" style="height: 16rem">
+                    <div class="card-body">
+                        <h5 class="card-title">{{$publisher->name}}</h5>
+                        <p class="card-text">Address:<br>
+                            {{$publisher->address}}</p>
+                        <a href="/publisher/{{$publisher->id}}" class="btn btn-primary" title="Book Detail">Detail</a>
+                    </div>
+                </div>
             </div>
-            {{-- details --}}
-            <div class="p-3">
-                <h5>{{$publisher->name}}</h5>
-                <p>Address:<br>
-                {{$publisher->address}}</p>
-                <a href="/publisher/{{$publisher->id}}" class="btn btn-primary" title="Book Detail">Detail</a>
-            </div>
-        </div>
+        @endforeach
     </div>
-    @endforeach
-</div>
 
 @endsection

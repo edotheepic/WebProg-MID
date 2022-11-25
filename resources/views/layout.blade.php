@@ -10,7 +10,7 @@
 </head>
 
 <header class="container-fluid bg-primary text-light justify-content-center text-center">
-        <h1 class="m-0  p-5">Giant Book Supplier</h1>
+    <h1 class="m-0 p-5">Giant Book Supplier</h1>
 </header>
 
 <nav class="navbar navbar-expand-lg bg-light mb-3">

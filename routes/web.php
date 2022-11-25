@@ -14,10 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', [MasterController::class, 'home']);
 Route::get('/detail/{id}', [MasterController::class, 'detail']);
 Route::get('/category/{id}', [MasterController::class, 'category']);
