@@ -9,10 +9,8 @@
     <title>@yield('title')</title>
 </head>
 
-<header class="container-fluid bg-warning text-light justify-content-center text-center">
-    {{-- <div class="text-light"> --}}
+<header class="container-fluid bg-primary text-light justify-content-center text-center">
         <h1 class="m-0  p-5">Giant Book Supplier</h1>
-    {{-- </div> --}}
 </header>
 
 <nav class="navbar navbar-expand-lg bg-light mb-3">
@@ -36,7 +34,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/publisher">Publisher</a>
+                    <a class="nav-link" href="/publisherlist">Publisher</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contact">Contact</a>
@@ -60,7 +58,7 @@
 </body>
 
 <footer class="container-fluid bg-primary text-light justify-content-center text-center">
-    <p>&#169 Happy Book Store 2022</p>
+    <p class="m-0 p-2">&#169 Happy Book Store 2022</p>
 </footer>
 
 </html>

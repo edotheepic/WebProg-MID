@@ -26,19 +26,19 @@ class PublisherSeeder extends Seeder
             'address'=>'1290 Avenue of the Americas, New York, NY 10104',
             'phone'=>'800-759-0190',
             'email'=>'hachette.books@hbgusa.com',
-            'image'=>'storage/publisher_images/publisher1.png'],
+            'image'=>'storage/publisher_images/publisher2.png'],
 
             ['name'=>'Harper Collins Publishers',
             'address'=>'195 Broadway, New York, NY 10007',
             'phone'=>'800-242-7737',
             'email'=>' orders@harpercollins.com',
-            'image'=>'storage/publisher_images/publisher1.png'],
+            'image'=>'storage/publisher_images/publisher3.png'],
 
             ['name'=>'Macmillan Publishers',
             'address'=>'120 Broadway, New York, NY 10271',
             'phone'=>'646-307-5048',
             'email'=>'narrators@macmillan.com',
-            'image'=>'storage/publisher_images/publisher1.png'],
+            'image'=>'storage/publisher_images/publisher4.png'],
 
         ]);
     }

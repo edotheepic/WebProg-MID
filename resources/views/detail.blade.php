@@ -1,6 +1,6 @@
-@extends('navbar')
+@extends('layout')
 
-@section('title', 'Home')
+@section('title', 'Detail')
 
 @section('subtitle', 'Books Detail')
 
